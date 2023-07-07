@@ -6,11 +6,27 @@
     <title>Razorpay</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/a2cec5f939.js" crossorigin="anonymous"></script>
+
+    <!--font Light-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <!--font Mulish-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+
     <style>
         .corefeaturesection {
             background-size: 100% 100%;
         }
         .featuresection2{
+            background-size: 100% 100%;
+        }
+
+        .last-section-img{
             background-size: 100% 100%;
         }
 
@@ -26,6 +42,9 @@
             100%{
                 top: -100%;
             }
+        }
+        .thin{
+            font-family: 'Raleway', sans-serif;
         }
     </style>
 
@@ -80,17 +99,20 @@
                     </li>
                 </ul>
     
-                <div class="flex space-x-6 pt-5" >
+                <div class="flex gap-3 justify-evenly" >
                      <img src="./images/india-flag.svg"
                      width="28px"
                      height="20px">
-    
-                     <button class="font-bold h-11 py-3 px-5 font-mullish text-white border-lightBlue 
+
+                     <!--buttons-->
+                     <div class="mt-[22px] space-x-3">
+                        <button class="font-bold h-11 py-3 px-5 font-mullish text-white border-lightBlue 
                        border rounded-sm text-sm">Log in</button>
     
                        <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold 
-                       bg-white text-lightBlue300 border transition-all duration-200 h-11
-                       hover:text-lightBlue500 ">Sign up</button>
+                       bg-white text-lightBlue border transition-all duration-200 h-11
+                       hover:text-lightBlue500 ">Sign Up <i class=" px-2 fa-solid fa-arrow-right fa-xs"></i></button>
+                     </div>
                 </div>
             </div>
         </nav>
@@ -109,7 +131,7 @@
                         employees. Never run out of working capital.    
                     </p>
                     <button class="bg-lightBlue text-white font-mullish rounded-md font-bold
-                    hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]"> Sign up here</button>
+                    hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]"> Sign Up Now <i class=" px-2 fa-solid fa-arrow-right fa-xs"></i></button>
                 </div>
     
     
@@ -122,7 +144,7 @@
     
             <div class="absolute left-0 right-[-1px]">
                 <img src="images/hero-shape.svg" alt=""
-                class="w-[100%] px-0 mx-0">
+                class="w-[100%] h-[180px] px-0 mx-0">
             </div>
     
         </section>
@@ -207,40 +229,50 @@
                         class="bg-lightBlue absolute right-3 top-3 w-12 h-12 transition-all 
                         duration-200 rounded-full z-[8]">
         
-                        <!--box shape-->
-                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-slate-700 h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
-                            <path d="m 0 6 
-                              a 6 6 0 0 1 6 -6 
-                              h 250.32501220703125 
-                              a 16 16 0 0 1 11 5 
-                              l 77 77 
-                              a 16 16 0 0 1 5 11 
-                              v 126 
-                              a 6 6 0 0 1 -6 6 
-                              h -337.32501220703125 
-                              a 6 6 0 0 1 -6 -6 
-                              z" fill="#fff"></path>
-                              </svg>
+                        <div class=""> 
+                            <!--box shape-->
+                          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-slate-700 h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                              <path d="m 0 6 
+                                a 6 6 0 0 1 6 -6 
+                                h 250.32501220703125 
+                                a 16 16 0 0 1 11 5 
+                                l 77 77 
+                                a 16 16 0 0 1 5 11 
+                                v 126 
+                                a 6 6 0 0 1 -6 6 
+                                h -337.32501220703125 
+                                a 6 6 0 0 1 -6 -6 
+                                z" fill="#fff">
+                             </path>
+                          </svg>
+                        </div>
                         
                         <!--content-->
-                        <div class="absolute z-[100] w-full hf flex flex-col space-y-14 justify-between pl-5 pr-8 py-6">
+                        
+                        <div class="absolute  w-full  flex flex-col justify-between  h-[240px] pl-8 pb-3 relative z-20
+                                    ">
+                                    
+
+                            <img src="/images/features-wave.svg" alt=""
+                            class="absolute crd1 h-[60px] opacity-0 right-0 bottom-[40px]
+                                   group-hover:shadow-lg opacity-1 transition-all duration-200 bg-no-repeat z-20 
+                                    group-hover:bg-[url(/images/features-wave.svg)] ]">
+
                             <!--text-->
-                            <div>
+                            <div class="flex flex-col mt-7 pr-8">
                                 <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">
                                 Payment Link</h3>
                                 <p class="mt-6 font-mullish text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately </p>
                             </div>
                             
-        
                             <!--hyperlink-->
-                            <div class="flex flex-row items-center cursor-pointer group w-auto gap-2">
+                            <div class="flex flex-row items-center cursor-pointer group w-auto gap-2 pr-8">
                                 <a href=""
-                                class="font-bold text-blue-500  font-mullish text-[16px]
+                                 class="font-bold text-blue-500  font-mullish text-[16px]
                                  group-hover:text-grayBlue">Know More</a>
-                                <i class="fa-solid fa-greater-than fa-2xs w-5 h-5 pt-[13px] text-lightBlue500
-                                group-hover:text-grayBlue transition-all duration-200"></i>
+                                <i class="fa-solid fa-greater-than fa-2xs w-5 h-5 pt-[10px] text-lightBlue500
+                                 group-hover:text-grayBlue transition-all duration-200"></i>
                             </div>
-        
                         </div>
                     </div>
                     <!--box2-->
@@ -692,11 +724,11 @@
     
         <!--new features-->
         <section class="bg-white relative">
-            <div class=" width-11/12 max-w-[1080px] relative mx-auto pt-4">
+            <div class=" width-11/12 max-w-[1080px] relative z-10 mx-auto pt-4">
                 <img src="./images/feature-section1-dottedrows.png" alt=""
-                class="absolute w-[232px] left-[300px] top-[-6rem] z-[10]">
+                class="absolute w-[232px] left-[300px] top-[-72px] ">
                 <img src="./images/feature-section1-dottedrows.png" alt=""
-                class="absolute w-[232px] right-[-3.5rem] top-[-6rem] z-[10]">
+                class="absolute w-[232px] right-[-3.5rem] top-[-72px] ">
     
                 <div class="w-full grid grid-cols-3 gap-3 mt-2 z-[100]">
                     <!--item1-->
@@ -706,8 +738,7 @@
                     </div>
                     <!--box1-->
                     <div class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
-                    bg-no-repeat hover:scale-105 transition-all duration-200  shadow-md bg-white 
-                    hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+                    bg-no-repeat hover:scale-105 transition-all duration-200  shadow-md bg-white z-20 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
                         <img src="./images/razorpayXicon.svg" alt="">
                         <h3 class="font-mullish text-xl font-bold pt-4">Instant Settlements</h3>
                         <p class="py-3 font-mullish text-[18px] leading-normal text-gray-400">Settle your customer payments within 10 seconds as soon your account is activated, even during holiday.</p>
@@ -722,7 +753,7 @@
                     </div>
                     <!--box2-->
                     <div class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
-                    bg-no-repeat hover:scale-105 transition-all duration-200 shadow-md bg-white   
+                    bg-no-repeat hover:scale-105 transition-all duration-200 shadow-md bg-white z-20 
                     hover:bg-[url(/images/instant-settlement-bghover.svg)] ">
                         <img src="./images/razorpayXicon.svg" alt="">
                         <h3 class="font-mullish text-xl font-bold pt-4">UPI AutoPay</h3>
@@ -738,13 +769,13 @@
                     </div>
                     <!--box3-->
                     <div class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
-                    bg-no-repeat hover:scale-105 transition-all duration-200   shadow-md bg-white 
+                    bg-no-repeat hover:scale-105 transition-all duration-200   shadow-md bg-white z
                     hover:bg-[url(/images/instant-settlement-bghover.svg)]">
                         <img src="./images/razorpayXicon.svg" alt="">
                         <h3 class="font-mullish text-xl font-bold pt-4">Payment Button</h3>
                         <p class="py-3 font-mullish text-[18px] leading-normal text-gray-400">Accept payments on your website, in less than 5 minutes. No developer needed.</p>
                         <!--hyperlink-->
-                        <div class="flex flex-row items-center cursor-pointer group w-auto gap-2">
+                        <div class=" flex flex-row items-center cursor-pointer group w-auto gap-2">
                             <a href=""
                             class="font-bold text-blue-500  font-mullish text-[16px]
                              group-hover:text-grayBlue">Know More</a>
@@ -919,17 +950,18 @@
                 </button>
     
                 <!--main content-->
-                <div class="flex flex-row max-w-[960px] mx-auto my-20">
+                <div class="flex flex-row max-w-[960px] mx-auto my-20 space-x-[10rem]">
+                    <!--left part-->
                     <img class="h-[320px] w-[320px] rounded-xl" src="/images/testimonial.jpg" alt="">
     
                     <!--right part-->
-                    <div class="max-w-[400px]">
-                        <img  src="/images/quotes.svg" alt="">
-                        <p>Ready Made Closed Wallet Solutions For Quick Refunds</p>
-                        <a class="font-mullish italic underline text-gray-400 font-extralight" href="">Learn More</a>
-                        <h3>Lorem, ipsum.</h3>
-                        <p>CEO, XYZ Company</p>
-                        <img src="/images/fake-company-logo.png" alt="">
+                    <div class="max-w-[400px] justify-items-center mt-10">
+                        <img  src="/images/quotes.svg" alt= "" class="h-[40px] w-[35px] -mb-2">
+                        <p class="thin font-mullish text-3xl leading-10">Ready Made Closed Wallet Solutions For Quick Refunds</p>
+                        <a class="font-mullish italic underline text-gray-400 " href="">Learn More</a>
+                        <h3 class="font-mullish font-bold text-2xl">Lorem, ipsum.</h3>
+                        <p class="space-y-4 font-mullish text-sm my-2">CEO, XYZ Company</p>
+                        <img class="w-[80px] h-[40px]" src="/images/fake-company-logo.png" alt="">
                     </div>
                 </div>
     
@@ -942,6 +974,74 @@
                         </i>
                     </div>
                 </button>
+
+                <!--6 dots-->
+                <div class="flex flex-row justify-center space-x-2 ">
+                    <!--dot 1-->
+                    <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+                    <!--dot 2-->
+                    <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full"></div>
+
+                    <!--dot 3-->
+                    <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+                    <!--dot 4-->
+                    <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+                    <!--dot 5-->
+                    <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+                    <!--dot 6-->
+                    <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+                </div> 
+            </div>
+        </section>
+
+
+        <!--last section-->
+        <section class="bg-[url(.\images\CTABg.svg)] h-[510px] bg-cover relative bg-no-repeat last-section-img"> 
+            <!--main part-->
+            <div class="w-[11/12] max-w-[1080px] mx-auto flex flex-row relative items-center pt-[7rem] justify-between space-x-20">
+                <!--left part-->
+                <div class="max-w-[600px]">
+                    <h3 class="font-mullish py-4 font-bold text-2xl justify-center text-white">Supercharge your business with Razorpay</h3>
+                    <div  class=" w-6 bg-greenLight h-1 justify-center"></div>
+                    <p class=" my-5 text-white  opacity-90">Sign up now to experience the future of payments and offer <br> your customers the best checkout experience.</p>
+                    <ul class="flex flex-row flex-wrap gap-x-7 my-6 text-white">
+                        <li class="font-mullish flex  flex-row gap-x-7">
+                            <i class="fa-solid fa-check pt-[4px] text-greenLight"></i>
+                            <span>Quick onboarding</span>
+                        </li>
+
+                        <li class="font-mullish flex flex-row gap-x-7">
+                            <i class="fa-solid fa-check pt-[4px] text-greenLight"></i>
+                            <span>Access to entire product suite</span>
+                        </li>
+
+                        <li class="font-mullish flex flex-row gap-x-7">
+                            <i class="fa-solid fa-check pt-[4px] text-greenLight"></i>
+                            <span>API access</span>
+                        </li>
+                        
+                        <li class="font-mullish flex flex-row gap-x-7">
+                            <i class="fa-solid fa-check pt-[4px] text-greenLight"></i>
+                            <span>24x7 support</span>
+                        </li>
+                        
+                    </ul>
+
+                    <!--button-->
+                    <button class=" min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue border 
+                                    flex rounded-sms items-center hover:text-lightBlue transition-all duration-200 py-3 px-4">
+                        Sign Up Now<i class=" px-2 fa-solid fa-arrow-right fa-xs"></i>
+                    </button>
+                </div>
+
+                <!--right image-->
+                <div>
+                    <img class="h-[250px]" src="./images/ctaImg.svg" alt="">
+                </div>
             </div>
         </section>
     </div> 

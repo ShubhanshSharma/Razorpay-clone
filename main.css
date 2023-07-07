@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.crd1{
+    background-image: url-("/images/features-wave.svg") ;
+    background-position: right ;
+}
