@@ -2,7 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-.crd1{
-    background-image: url-("/images/features-wave.svg") ;
-    background-position: right ;
+.wave1{
+    height: 60px;
+    width: 90px;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 65%;
+    filter: opacity(0);
+}
+
+.card:hover .wave1{
+    filter: opacity(1);
+    transition: all;
+    transition: 0.4s;
+}
+
+.card:hover{
+    box-shadow: 0 10px 15px -1px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: 0.4s;
+}
+
+.wave2{
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 53%;
+    filter: opacity(0);
+}
+
+.card2:hover .wave2{
+    filter: opacity(1);
+    transition: all;
+    transition: 0.4s;
+}
+
+.card2:hover{
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0);
+    transition: 0.4s;
 }
